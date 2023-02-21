@@ -1,0 +1,38 @@
+<div class="d-flex align-items-center" style="height: 100vh">
+  <div class="container card p-4 shadow">
+    <h2 class="">Registration Form</h2>
+    <form [formGroup]="registerform" (ngSubmit)="proceedregistation()">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="id" name="userId" placeholder="User Name" formControlName="id">
+        <label for="id">User Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Name" formControlName="name">
+        <label for="name">Name*</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="registerPassWord" placeholder="Password" formControlName="password">
+        <label for="registerPassWord">Password</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="uEmail" placeholder="name@example.com" formControlName="email">
+        <label for="uEmail">Email address</label>
+      </div>
+      <div class="mb-3" formControlName="gender">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" value="male" type="radio" name="Gender" id="male" value="option1">
+          <label class="form-check-label" for="male">male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" value="female" type="radio" name="Gender" id="female" value="option2">
+          <label class="form-check-label" for="female">female</label>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-flex">
+        <button mat-raised-button color="primary">Button</button>
+<!--        <button class="btn btn-outline-success px-5" type="button">Button</button>-->
+      <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+      </div>
+    </form>
+  </div>
+</div>
