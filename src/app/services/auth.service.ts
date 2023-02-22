@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
 export class AuthService {
 
   constructor(private http:HttpClient) {}
-  apiUrl = 'https://localhost:3000/user';
+  apiUrl = 'http://localhost:3000/user';
 
   GetAll(){
       return this.http.get(this.apiUrl);
@@ -20,5 +20,11 @@ export class AuthService {
   }
   UpdateUser(code:any ,inputdata: any){
     return this.http.post(this.apiUrl+'/'+code, inputdata)
+  }
+  IsLoggedIn(){
+    return localStorage.getItem('username')!=null;
+  }
+  GetUserroll(){
+    return localStorage.getItem('userrole')!=null?localStorage.getItem('userrole')?.toString():'';
   }
 }

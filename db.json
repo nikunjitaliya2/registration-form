@@ -1,5 +1,40 @@
 {
-    "users": [
-
-    ]
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin user",
+      "password": "Admin@123",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "nikunj",
+      "name": "Admin user",
+      "password": "Admin@123",
+      "email": "nikunj@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "poojan",
+      "name": "Admin user",
+      "password": "poojan@123",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "vaibhv",
+      "name": "Admin user",
+      "password": "Admin@123",
+      "email": "vaibhv@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ]
 }

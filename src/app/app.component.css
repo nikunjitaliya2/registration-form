@@ -1,0 +1,26 @@
+/*::ng-deep .mat-mdc-slide-toggle .mdc-switch.mdc-switch--unselected .mdc-switch__icon, ::ng-deep .mdc-switch__icons, ::ng-deep .mdc-switch__ripple {*/
+/*  visibility: hidden;*/
+/*  width: 150px;*/
+/*}*/
+
+/*.on-off-toggle {*/
+/*  width: 120px;*/
+/*  height: 120px;*/
+/*}*/
+
+/*.on-off-label {*/
+/*  font-size: 12px;*/
+/*  font-weight: bold;*/
+/*  text-transform: uppercase;*/
+/*  color: white;*/
+/*}*/
+
+/*.mat-checked .mat-slide-toggle-bar {*/
+/*  background-color: green;*/
+/*}*/
+
+/*.mat-checked .mat-slide-toggle-thumb {*/
+/*  background-color: green;*/
+/*}*/
+
+

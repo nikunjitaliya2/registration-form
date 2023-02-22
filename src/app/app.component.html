@@ -1,6 +1,22 @@
+<p *ngIf="ismenurequired">
+  <mat-toolbar color="primary" class="d-flex justify-content-between">
+    <span>
+      <a routerLink="" class="text-decoration-none text-white pe-3">Home</a>
+      <a routerLink="/user" class="text-decoration-none text-white">Users</a>
+    </span>
+    <span class="example-spacer"></span>
+    <span>
+      <a routerLink="/login" class="text-decoration-none text-white">Logout</a>
+    </span>
 
-<div class="content d-block w-100" role="main">
+  </mat-toolbar>
+</p>
+
+
+<div class="content" style="width: 100%; display: block" role="main">
   <router-outlet></router-outlet>
 </div>
 
+
+<!--<mat-slide-toggle>Slide me!</mat-slide-toggle>-->
 
